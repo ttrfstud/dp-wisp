@@ -20,7 +20,7 @@ function dpwisp(jobs, weif) {
     opt[i] = Math.max(opt[i - 1], weif(job) + opt[p[i]]);
   }
 
-  res = traceback(opt);
+  res = traceback(jobs, weif, opt);
 
   return res;
 }
