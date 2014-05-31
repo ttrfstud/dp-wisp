@@ -1,21 +1,15 @@
 {
   "name": "dp-wisp",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "dynamic programming algorithm for weighted interval scheduling problem",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/ttrfstud/dp-wisp.git"
   },
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/ttrfstud/dp-wisp/issues"
   },
-  "homepage": "https://github.com/ttrfstud/dp-wisp",
   "devDependencies": {
     "taptap": "0.0.3"
   }
