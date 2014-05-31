@@ -1,0 +1,3 @@
+dp-wisp
+=================
+dp-wisp is a module computing solution for weighted interval scheduling problem, using dynamic programming algorithm described [here](http://courses.cs.washington.edu/courses/cse521/13wi/slides/06dp-sched.pdf). the signature of the only exported method is _(jobs, weif)_, where jobs is an array of jobs, where each job has .s (start) and .f (finish) properties. weif is short for "weighting function", its signature should be _(job)_, and it will be passed any job to determine the weight of that job. please check your arguments before invoking it!
