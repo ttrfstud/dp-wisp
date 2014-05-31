@@ -1,4 +1,4 @@
-var test = require('test');
+var test = require('taptap');
 var assert = require('assert');
 var computep = require('../computep');
 
@@ -7,7 +7,7 @@ test(function (done) {
     {s: 1, f: 4}, 
     {s: 3, f: 5}, 
     {s: 0, f: 6}, 
-    {s: 4, f: 6}, 
+    {s: 4, f: 7}, 
     {s: 3, f: 8}, 
     {s: 5, f: 9}, 
     {s: 6, f: 10}, 

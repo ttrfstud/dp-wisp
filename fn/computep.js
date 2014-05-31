@@ -1,3 +1,5 @@
+var sortjobs = require('./sortjobs');
+
 function computep(jobs) {
   var i, j, len;
   var p;

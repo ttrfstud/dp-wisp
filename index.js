@@ -1,3 +1,8 @@
+var assert = require('assert');
+
+var computep = require('./fn/computep');
+var traceback = require('./fn/traceback');
+
 function dpwisp(jobs, weif) {
   var i, len;
   var opt;
@@ -17,10 +22,15 @@ function dpwisp(jobs, weif) {
 
   for (i = 1; i < len; i++) {
     job = jobs[i];
-    opt[i] = Math.max(opt[i - 1], weif(job) + opt[p[i]]);
+    opt[i] = Math.max(opt[i - 1], weif(job) + (opt[p[i]] || 0));
   }
 
-  res = traceback(jobs, weif, opt);
+  res = traceback(jobs, p, weif, opt);
+
+  res = {
+    val: opt[opt.length - 1],
+    schedule: res[res.length - 1]
+  }
 
   return res;
 }
